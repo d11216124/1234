@@ -19,6 +19,9 @@ def safe_division(a, b):
         >>> safe_division(10, 2)
         5.0
         >>> safe_division(10, 0)
+        Traceback (most recent call last):
+        ...
+        ZeroDivisionError: division by zero
         >>> safe_division(-10, 2)
         -5.0
     """
