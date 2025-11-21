@@ -24,7 +24,7 @@ def safe_division(numerator, denominator):
         >>> safe_division(10, 2)
         5.0
         >>> safe_division(10, 0)
-        
+        None
         >>> safe_division(7, 3)
         2.3333333333333335
     """

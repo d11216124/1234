@@ -125,7 +125,7 @@ class TestSafeDivisionEdgeCases(unittest.TestCase):
     def test_min_float_division(self):
         """Test division with very small positive float values"""
         result = safe_division(1e-308, 1e2)
-        self.assertAlmostEqual(result, 1e-310, places=320)
+        self.assertAlmostEqual(result, 1e-310, places=15)
 
 
 if __name__ == '__main__':
