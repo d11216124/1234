@@ -1,14 +1,16 @@
-def safe_division(a, b):
+from typing import Union, Optional
+
+
+def safe_division(a: Union[int, float], b: Union[int, float]) -> Optional[float]:
     """
     Safely divides two numbers, preventing division by zero.
     
     Args:
-        a: The dividend (numerator)
-        b: The divisor (denominator)
+        a (int or float): The dividend (numerator)
+        b (int or float): The divisor (denominator)
     
     Returns:
-        The result of a / b if b is not zero
-        None if b is zero
+        float or None: The result of a / b if b is not zero, None if b is zero
     
     Examples:
         >>> safe_division(10, 2)
